@@ -1,0 +1,37 @@
+<!-- Funding -->
+<section class="page-section" id="funding">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-heading">Funding</h2>
+        <h3 class="section-subheading">Funding from the following sponsors is gratefully acknowledged</h3>
+      </div>
+    </div>
+
+    <ul class="fundinglist">
+      {% assign ordered_funding = (site.funding | sort: 'year') %}
+      {% for post in ordered_funding reversed %}
+        <li>
+          <div class="fundinglist-image">
+            {% for logo in post.logos %}
+              <img class="rounded-circle img-fluid" src="assets/img/logos/{{ logo }}">
+            {% endfor %}
+          </div>
+          <div class="fundinglist-panel">
+            <div class="fundinglist-heading">
+              {% if post.link %}
+                <h4><span class="text-muted">[{{ post.startdate }}&mdash;{{post.enddate}}]</span> <a href="{{ post.link }}">{{ post.title }}</a> </h4>
+              {% else %}
+                <h4><span class="text-muted">[{{ post.startdate }}&mdash;{{post.enddate}}]</span> {{ post.title }} ({{ post.code }})</h4>
+              {% endif %}
+            </div>
+            <div class="fundinglist-body">
+                <h5>{{ post.agency }}. {% if post.call %} {{ post.call }}. {% endif %}</h5>
+            </div>
+          </div>
+        </li>
+      {% endfor %}
+    </ul>
+
+  </div>
+</section>

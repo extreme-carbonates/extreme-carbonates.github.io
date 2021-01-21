@@ -1,0 +1,108 @@
+# Site settings
+title: Materials under extreme conditions
+author: Materials under extreme conditions research group
+email: aoterodelaroza@gmail.com
+description: >- # this means to ignore newlines until "baseurl:"
+  Joint experimental and theoretical effort that aims to shed light into
+  carbonation processes, map out the pressure-temperature-composition
+  phase diagrams and search for novel dense carbonate materials. Such
+  knowledge allows understanding the Earth's carbon cycle, and it helps
+  design promising long-term CO2 storage strategies.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://extreme-carbonates.github.io"
+repository: "extreme-carbonates/extreme-carbonates.github.io"
+github_username: extreme-carbonates
+#twitter_username: jekyllrb
+
+# analytics
+analytics:
+  google: #Google Analytics tracking code here
+
+# Build settings
+markdown: kramdown
+
+# Excludes and includes
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - .bundle
+  - .gitignore
+  - .sass-cache
+  - .asset-cache
+  - .jekyll-assets-cache
+  - LICENSE
+  - README.md
+
+include:
+  - _projects/
+  - _publications/
+  - _news/
+  - _resources/
+  - _funding/
+  - _collaborations/
+
+collections:
+  projects:
+    output: true
+  publications:
+    output: true
+  news:
+    output: true
+  resources:
+    output: true
+  funding:
+    output: true
+  collaborations:
+    output: true
+
+# Team
+people:
+- name: Dr. David Santamaría Pérez
+  pic: david.jpg
+  email: david.santamaria@uv.es
+  social:
+    - class: fab
+      icon: researchgate
+      url: https://www.researchgate.net/profile/David_Santamaria-Perez2
+    - class: fab
+      icon: linkedin
+      url: https://es.linkedin.com/in/davidsantamariaperez
+    - class: fa
+      icon: university
+      url: https://www.uv.es/uvweb/instituto-ciencia-materiales-icmuv/es/grupos-investigacion/fotonica-semiconductores/presentacion-1285918307509.html
+    - class: fa
+      icon: user
+      url: /assets/pdf/cv/davidCV.pdf
+  affiliation: Applied Physics Department, Institute of Materials Science (ICMUV), Universidad de Valencia, Spain
+
+- name: Dr. Javier Ruiz Fuertes
+  pic: javier.jpg
+  email: ruizfuertesj@unican.es
+  affiliation: DCITIMAC, Universidad de Cantabria, Spain
+
+- name: Dr. Alberto Otero de la Roza
+  email: oteroalberto@uniovi.es
+  pic: alberto.jpg
+#  alt: pimiento, tenedor, jarra, cuchara
+  social:
+    - class: fab
+      icon: google
+      url: https://scholar.google.com/citations?user=GR5q_Q0AAAAJ
+    - class: fa
+      icon: home
+      url: https://aoterodelaroza.github.io/
+    - class: fab
+      icon: github
+      url: https://github.com/aoterodelaroza
+  affiliation: Department of Analytical and Physical Chemistry, Universidad de Oviedo, Spain
+
+- name: Dr. Raquel Chuliá Jordán
+  pic: raquel.jpg
+  email: raquel.chulia@uv.es
+  social:
+    - class: fa
+      icon: user
+      url: /assets/pdf/cv/raquelCV.pdf
+  affiliation: Applied Physics Department, Institute of Materials Science (ICMUV), Universidad de Valencia, Spain
+

@@ -1,0 +1,64 @@
+<!-- Publications Section -->
+
+<!-- Count the total number of publications plus one-->
+<!-- First and last year in list -->
+{% assign firstyear = 9999 %}
+{% assign lastyear = 0 %}
+{% assign ntot = 1 %}
+{% for post in site.publications %}
+  {% if post.year < firstyear %}
+    {% assign firstyear = post.year %}
+  {% endif %}
+  {% if post.year > lastyear %}
+    {% assign lastyear = post.year %}
+  {% endif %}
+  {% assign ntot=ntot | plus:1 %}
+{% endfor %}
+
+<section class="bg-light page-section" id="publications">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-heading">Publications</h2>
+      </div>
+    </div>
+
+    <!-- Run over years -->
+    {% assign npub = ntot %}
+    {% for year in (firstyear..lastyear) reversed %} 
+      {% assign nthisyear = 0 %}
+      <ul class="publist">
+          {% assign ordered_publications = (site.publications | sort: 'priority') %}
+          {% for post in ordered_publications %}
+            {% if post.year == year %}
+              {% if nthisyear == 0 %}
+                {% assign nthisyear = 1 %}
+                  <div class="row">
+                    <div class="col-lg-12 text-center">
+                      <h4 class="section-subheading">{{ year }}</h4>
+                    </div>
+                  </div>
+              {% endif %}
+
+              {% assign npub=npub | minus:1 %}
+              <li>
+                  <div class="publist-image">
+                      <img class="rounded-circle img-fluid" src="assets/img/research/{{ post.img }}">
+                  </div>
+                  <div class="publist-panel">
+                      <div class="publist-heading">
+                          <h4>{{ npub }}. <a href="https://dx.doi.org/{{ post.doi }}">{{ post.title }}</a> </h4>
+                      </div>
+                      <div class="publist-body">
+                          <h5><i>{{ post.author }}</i> {{ post.reference | markdownify }}</h5>
+                      </div>
+                  </div>
+              </li>
+            {% endif %}
+          {% endfor %}
+      </ul>
+    {% endfor %}
+
+  </div>
+</section>
+

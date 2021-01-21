@@ -1,0 +1,35 @@
+<!-- Team -->
+<section class="page-section" id="team">
+  <div class="container">
+    <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading">Members</h2>
+        </div>
+    </div>
+    <div class="row">
+    {% for person in site.people %}
+      <div class="col-md-3">
+        <div class="team-member">
+          <img class="img-fluid" src="assets/img/team/{{ person.pic }}" title="{{ person.alt }}">
+	  <div class="caption">
+            <h4>{{ person.name }}</h4>
+            <a href="mailto:{{person.email}}">{{ person.email }}</a>
+            <p class="text-muted">{{ person.affiliation }}</p>
+          </div>
+          <ul class="list-inline social-buttons">
+          {% for network in person.social %}
+            <li class="list-inline-item">
+              <a href="{{ network.url }}">
+                <i class="{{ network.class }} fa-{{network.icon}}"></i>
+              </a>
+            </li>
+          {% endfor %}
+          </ul>
+        </div>
+      </div>
+    {% endfor %}
+    </div>
+  </div>
+</section>
+<!-- End Team -->
+

@@ -1,0 +1,13 @@
+## site generated
+_site
+.sass-cache
+.jekyll-metadata
+.jekyll-cache
+
+## gem
+.bundle
+vendor
+Gemfile.lock
+
+## emacs
+*~

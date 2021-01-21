@@ -1,0 +1,66 @@
+// Styling for the funding section
+
+#funding {
+  .fundinglist {
+    position: relative;
+    padding: 0;
+    list-style: none;
+    > li {
+      position: relative;
+//      min-height: 100px;
+      padding: 10px 0 0 0;
+      margin-bottom: 0px;
+      &:after,
+      &:before {
+        display: table;
+        content: ' ';
+      }
+      &:after {
+        clear: both;
+      }
+      .fundinglist-panel {
+        position: relative;
+        float: right;
+        width: 100%;
+//        border: 1px solid $gray-200;
+        padding: 0px 0px 0 70px;
+        text-align: left;
+        vertical-align: middle;
+        &:before {
+          right: auto;
+          border-right-width: 15px;
+          border-left-width: 0;
+        }
+        &:after {
+          right: auto;
+          border-right-width: 14px;
+          border-left-width: 0;
+        }
+      }
+      .fundinglist-image {
+        display:table-cell;
+        vertical-align: middle;
+        position: absolute;
+        left: 0;
+        width: 50px;
+        padding: 2px 0px 0px 0px;
+        margin-left: 0;
+        text-align: center;
+      }
+      .fundinglist-heading {
+        h4 {
+          font-size: 20px;
+          margin-top: 0;
+          text-transform: none;
+        }
+      }
+      .fundinglist-body {
+        h5 {
+          text-transform: none;
+          font-size: 16px;
+          font-weight: 400;
+        }
+      }
+    }
+  }
+}

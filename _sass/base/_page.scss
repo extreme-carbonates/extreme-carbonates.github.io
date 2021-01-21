@@ -1,0 +1,103 @@
+// Global styling for this template
+body {
+  overflow-x: hidden;
+  @include body-font;
+}
+
+p {
+  line-height: 1.75;
+}
+
+a {
+  font-style: normal;
+  color: $primary;
+  &:hover {
+    color: darken($primary, 10%);
+  }
+}
+
+.text-primary {
+  color: $primary !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  @include heading-font;
+}
+
+.page-section {
+  padding: 100px 0;
+  h2.section-heading {
+    font-size: 50px;
+    letter-spacing: 2px;
+    margin-top: 0;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    @include script-font;
+  }
+  h3.section-subheading {
+    font-size: 32px;
+    font-weight: 400;
+    font-style: italic;
+    margin-bottom: 32px;
+    text-transform: none;
+    color: darken($primary,7.5%);
+    @include serif-font;
+  }
+  h4.section-subheading {
+    font-size: 28px;
+    text-transform: none;
+    @include serif-font;
+  }
+}
+@media(min-width:768px) {
+  section {
+    padding: 150px 0;
+  }
+}
+
+.caption {
+  margin: 0 auto;
+  padding: 10px;
+  text-align: center;
+  h4 {
+    margin: 0;
+    text-transform: none;
+  }
+  p {
+    font-size: 16px;
+    font-style: italic;
+    margin: 0;
+    @include serif-font;
+  }
+}
+
+div .midvalign{
+    display:table-cell;
+    vertical-align: middle;
+    padding: 2%;
+}
+
+// Highlight color customization
+::-moz-selection {
+  background: $primary;
+  text-shadow: none;
+}
+
+::selection {
+  background: $primary;
+  text-shadow: none;
+}
+
+img::selection {
+  background: transparent;
+}
+
+img::-moz-selection {
+  background: transparent;
+}

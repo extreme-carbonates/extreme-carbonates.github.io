@@ -1,0 +1,71 @@
+// Styling for the publist section
+.publist {
+  position: relative;
+  padding: 0;
+  list-style: none;
+  > li {
+    position: relative;
+    min-height: 35px;
+    margin-bottom: 10px;
+    &:after,
+    &:before {
+      display: table;
+      content: ' ';
+    }
+    &:after {
+      clear: both;
+    }
+    .publist-panel {
+      position: relative;
+      float: right;
+      width: 100%;
+      padding: 0 20px 0 100px;
+      text-align: left;
+      &:before {
+        right: auto;
+        border-right-width: 15px;
+        border-left-width: 0;
+      }
+      &:after {
+        right: auto;
+        border-right-width: 14px;
+        border-left-width: 0;
+      }
+    }
+    .publist-image {
+      position: absolute;
+      z-index: 100;
+      left: 0;
+      width: 80px;
+      height: 80px;
+      margin-left: 0;
+      text-align: center;
+      color: $white;
+      border: 7px solid $gray-200;
+      border-radius: 100%;
+      background-color: $primary;
+      h4 {
+        font-size: 10px;
+        line-height: 14px;
+        margin-top: 12px;
+      }
+    }
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  .publist-heading {
+    h4 {
+      font-size: 20px;
+      margin-top: 0;
+      text-transform: none;
+    }
+  }
+  .publist-body {
+    h5 {
+      text-transform: none;
+      font-size: 16px;
+      font-weight: 400;
+    }
+  }
+}

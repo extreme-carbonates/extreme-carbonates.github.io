@@ -1,0 +1,16 @@
+nav:
+  - title: "Research"
+    section: research
+
+  - title: "Publications"
+    section: publications
+    
+  - title: "Members"
+    section: team
+
+  - title: "Resources"
+    section: resources
+
+  - title: "Funding"
+    section: funding
+
