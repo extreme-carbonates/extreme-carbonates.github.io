@@ -9,5 +9,5 @@ call:
 code: MFA/2022/007
 link:
 logos:
-  - ejpania-square.jpg
+  - gva-square.jpg
 ---

@@ -9,5 +9,5 @@ call:
 code: CIAICO/2021/241
 link:
 logos:
-  - ejpania-square.jpg
+  - gva-square.jpg
 ---
