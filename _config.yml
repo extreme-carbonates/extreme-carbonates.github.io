@@ -42,6 +42,7 @@ include:
   - _projects/
   - _publications/
   - _news/
+  - _positions/
   - _resources/
   - _funding/
   - _collaborations/
@@ -52,6 +53,8 @@ collections:
   publications:
     output: true
   news:
+    output: true
+  positions:
     output: true
   resources:
     output: true
