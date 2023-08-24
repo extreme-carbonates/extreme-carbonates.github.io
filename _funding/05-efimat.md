@@ -7,7 +7,7 @@ year: 2018
 agency: Generalitat Valenciana
 call: PROMETEO grants
 code: PROMETEO/2018/123
-link: 
-logos: 
+link:
+logos:
   - gva-square.jpg
 ---

@@ -7,7 +7,7 @@ year: 2019
 agency: Spanish Ministerio de Ciencia e Innovación and Agencia Estatal de Investigación (AEI)
 call: Acciones de investigación - redes de dinamización
 code: RED2018-102612-T
-link: 
-logos: 
+link:
+logos:
   - ejpania-square.jpg
 ---
