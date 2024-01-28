@@ -111,5 +111,15 @@ people:
     - class: fa
       icon: user
       url: /assets/pdf/cv/raquelCV.pdf
+  affiliation: Department of Didactics of Experimental Sciences, Universidad de Valencia, Spain
+
+- name: Dr. Ganesh Bera
+  pic: ganesh.jpg
+  email:
+  affiliation: Applied Physics Department, Institute of Materials Science (ICMUV), Universidad de Valencia, Spain
+
+- name: Benedito Donizeti Botan Neto
+  pic: neto.jpg
+  email:
   affiliation: Applied Physics Department, Institute of Materials Science (ICMUV), Universidad de Valencia, Spain
 
