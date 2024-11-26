@@ -14,10 +14,6 @@ repository: "extreme-carbonates/extreme-carbonates.github.io"
 github_username: extreme-carbonates
 #twitter_username: jekyllrb
 
-# analytics
-analytics:
-  google: #Google Analytics tracking code here
-
 # Build settings
 markdown: kramdown
 
