@@ -111,11 +111,16 @@ people:
 
 - name: Dr. Ganesh Bera
   pic: ganesh.jpg
-  email:
+  email: ganesh.bera@uv.es
+  affiliation: Applied Physics Department, Institute of Materials Science (ICMUV), Universidad de Valencia, Spain
+
+- name: Dr. Neha Bura
+  pic: neha.jpg
+  email: neha.bura@uv.es
   affiliation: Applied Physics Department, Institute of Materials Science (ICMUV), Universidad de Valencia, Spain
 
 - name: Benedito Donizeti Botan Neto
   pic: neto.jpg
-  email:
+  email: benedito.botan@uv.es
   affiliation: Applied Physics Department, Institute of Materials Science (ICMUV), Universidad de Valencia, Spain
 
